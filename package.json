@@ -1,8 +1,11 @@
 {
     "name": "eleventy-critical-css",
     "version": "0.1.1",
-    "description": "Eleventy plugin to inline critical CSS improving render times",
+    "description": "Eleventy plugin to extract and inline critical CSS from your HTML templates",
     "main": "index.js",
+    "scripts": {
+        "release": "np --no-cleanup"
+    },
     "repository": "gregives/eleventy-critical-css",
     "author": "Greg Ives",
     "keywords": [
@@ -15,5 +18,8 @@
     "license": "MIT",
     "dependencies": {
         "critical": "^2.0.6"
+    },
+    "devDependencies": {
+        "np": "^7.0.0"
     }
 }
