@@ -3,8 +3,15 @@
     "version": "0.1.0",
     "description": "Eleventy plugin to inline critical CSS improving render times",
     "main": "index.js",
-    "repository": "https://github.com/gregives/eleventy-critical-css",
+    "repository": "gregives/eleventy-critical-css",
     "author": "Greg Ives",
+    "keywords": [
+        "eleventy",
+        "eleventy-plugin",
+        "critical",
+        "css",
+        "optimization"
+    ],
     "license": "MIT",
     "dependencies": {
         "critical": "^2.0.6"
