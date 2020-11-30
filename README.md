@@ -1,5 +1,9 @@
 # eleventy-critical-css
 
+[![npm version][npm-version-src]][npm-version-href]
+[![npm downloads][npm-downloads-src]][npm-downloads-href]
+[![License][license-src]][license-href]
+
 Eleventy plugin to extract and inline critical (above-the-fold) CSS from your HTML templates.
 
 You can easily add this plugin to your Eleventy project **in just two steps** or you can use `index.js` as a reference for your own implementation of critical CSS!
@@ -57,3 +61,12 @@ The default options passed to Critical are:
 ```
 
 Where `content` and `outputPath` are the arguments passed to [Eleventy transforms](https://www.11ty.dev/docs/config/#transforms).
+
+<!-- Badges -->
+
+[npm-version-src]: https://img.shields.io/npm/v/eleventy-critical-css/latest.svg
+[npm-version-href]: https://npmjs.com/package/eleventy-critical-css
+[npm-downloads-src]: https://img.shields.io/npm/dt/eleventy-critical-css.svg
+[npm-downloads-href]: https://npmjs.com/package/eleventy-critical-css
+[license-src]: https://img.shields.io/npm/l/eleventy-critical-css.svg
+[license-href]: https://npmjs.com/package/eleventy-critical-css
