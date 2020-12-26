@@ -6,7 +6,8 @@ module.exports = function (config, options) {
         if (outputPath.endsWith(".html")) {
             const { html } = await critical.generate({
                 ...{
-                    base: path.dirname(outputPath),
+                    assetPaths: [path.dirname(outputPath)],
+                    base: this._config.dir.output,
                     html: content,
                     inline: true,
                     minify: false,
