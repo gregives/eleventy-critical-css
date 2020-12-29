@@ -22,7 +22,7 @@ npm install eleventy-critical-css --save
 const criticalCss = require("eleventy-critical-css");
 
 module.exports = function (eleventyConfig) {
-    eleventyConfig.addPlugin(criticalCss);
+  eleventyConfig.addPlugin(criticalCss);
 };
 ```
 
@@ -36,11 +36,11 @@ You can pass options to Critical as a second parameter of `addPlugin`:
 const criticalCss = require("eleventy-critical-css");
 
 module.exports = function (eleventyConfig) {
-    eleventyConfig.addPlugin(criticalCss, {
-        minify: true,
-        height: 1080,
-        width: 1920,
-    });
+  eleventyConfig.addPlugin(criticalCss, {
+    minify: true,
+    height: 1080,
+    width: 1920,
+  });
 };
 ```
 
