@@ -1,5 +1,6 @@
 {
   "root": true,
+  "root": true,
   "extends": ["plugin:prettier/recommended"],
   "plugins": ["prettier"],
   "rules": {
