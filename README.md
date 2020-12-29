@@ -52,11 +52,12 @@ The default options passed to Critical are:
 
 ```js
 {
-    base: path.dirname(outputPath),
-    html: content,
-    inline: true,
-    minify: false,
-    rebase: ({ originalUrl }) => originalUrl,
+  assetPaths: [path.dirname(outputPath)],
+  base: this._config.dir.output,
+  html: content,
+  inline: true,
+  minify: false,
+  rebase: ({ originalUrl }) => originalUrl,
 }
 ```
 
