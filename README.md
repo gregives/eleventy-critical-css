@@ -3,6 +3,7 @@
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
 [![License][license-src]][license-href]
+[![Prettier][prettier-src]][prettier-href]
 
 Eleventy plugin to extract and inline critical (above-the-fold) CSS from your HTML templates.
 
@@ -71,3 +72,5 @@ Where `content` and `outputPath` are the arguments passed to [Eleventy transform
 [npm-downloads-href]: https://npmjs.com/package/eleventy-critical-css
 [license-src]: https://img.shields.io/npm/l/eleventy-critical-css.svg
 [license-href]: https://npmjs.com/package/eleventy-critical-css
+[prettier-src]: https://img.shields.io/badge/code_style-prettier-ff69b4.svg
+[prettier-href]: https://github.com/prettier/prettier
