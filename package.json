@@ -17,7 +17,7 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "critical": "^3.0.0"
+    "critical": "^3.0.1"
   },
   "devDependencies": {
     "eslint": "^7.22.0",
