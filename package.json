@@ -4,7 +4,9 @@
   "description": "Eleventy plugin to extract and inline critical CSS from your HTML templates",
   "main": "index.js",
   "scripts": {
-    "release": "np --no-cleanup"
+    "release": "np --no-cleanup",
+    "pretest": "eleventy",
+    "test": "jest"
   },
   "repository": "gregives/eleventy-critical-css",
   "author": "Greg Ives",
@@ -20,10 +22,13 @@
     "critical": "^4.0.0"
   },
   "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
     "eslint": "^7.28.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
     "husky": "^6.0.0",
+    "jest": "^27.0.4",
+    "jsdom": "^16.6.0",
     "lint-staged": "^11.0.0",
     "np": "^7.5.0",
     "prettier": "^2.3.1"
