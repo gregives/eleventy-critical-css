@@ -17,13 +17,13 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "critical": "^3.1.0"
+    "critical": "^4.0.0"
   },
   "devDependencies": {
     "eslint": "^7.28.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
-    "husky": "^5.2.0",
+    "husky": "^6.0.0",
     "lint-staged": "^11.0.0",
     "np": "^7.5.0",
     "prettier": "^2.3.1"

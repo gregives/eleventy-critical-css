@@ -9,13 +9,13 @@ module.exports = function (config, options) {
         base: this._config.dir.output,
         html: content,
         inline: true,
-        minify: false,
         rebase: ({ originalUrl }) => originalUrl,
         ...options,
       });
 
       return html;
     }
+
     return content;
   });
 };
