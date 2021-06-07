@@ -2,7 +2,9 @@
   "name": "eleventy-critical-css",
   "version": "0.2.4",
   "description": "Eleventy plugin to extract and inline critical CSS from your HTML templates",
-  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
   "scripts": {
     "release": "np --no-cleanup",
     "pretest": "eleventy",
