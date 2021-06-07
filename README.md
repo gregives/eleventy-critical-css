@@ -38,7 +38,6 @@ const criticalCss = require("eleventy-critical-css");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(criticalCss, {
-    minify: true,
     height: 1080,
     width: 1920,
   });
@@ -57,7 +56,6 @@ The default options passed to Critical are:
   base: this._config.dir.output,
   html: content,
   inline: true,
-  minify: false,
   rebase: ({ originalUrl }) => originalUrl,
 }
 ```
