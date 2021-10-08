@@ -53,14 +53,14 @@ The default options passed to Critical are:
 ```js
 {
   assetPaths: [path.dirname(outputPath)],
-  base: this._config.dir.output,
+  base: outputDir,
   html: content,
   inline: true,
   rebase: ({ originalUrl }) => originalUrl,
 }
 ```
 
-Where `content` and `outputPath` are the arguments passed to [Eleventy transforms](https://www.11ty.dev/docs/config/#transforms).
+Where `content` and `outputPath` are the arguments passed to [Eleventy transforms](https://www.11ty.dev/docs/config/#transforms) and `outputDir` is the output directory specified in your [Eleventy configuration](https://www.11ty.dev/docs/config/#output-directory).
 
 <!-- Badges -->
 
