@@ -11,16 +11,22 @@ module.exports = function (config, options) {
         path.dirname(outputPath);
 
       // Generate HTML with critical CSS
-      const { html } = await critical.generate({
-        assetPaths: [path.dirname(outputPath)],
-        base: outputDir,
-        html: content,
-        inline: true,
-        rebase: ({ originalUrl }) => originalUrl,
-        ...options,
-      });
+      try {
+        const { html } = await critical.generate({
+          assetPaths: [path.dirname(outputPath)],
+          base: outputDir,
+          html: content,
+          inline: true,
+          rebase: ({ originalUrl }) => originalUrl,
+          ...options,
+        });
 
-      return html;
+        return html;
+
+      } catch (err) {
+        console.log('HTML with critical CSS generation failed due to ' + err);
+        return content;
+      }
     }
 
     return content;
