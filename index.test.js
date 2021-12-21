@@ -10,7 +10,7 @@ describe("eleventy-critical-css", () => {
     expect(inlineStyles).toHaveLength(1);
 
     const extractedStyles = inlineStyles.item(0).innerHTML;
-    expect(extractedStyles).toBe("h1{color:red}");
+    expect(extractedStyles).toBe("main{height:150vh}h1{color:red}");
   });
 
   it("should load non-critical CSS asynchronously", () => {

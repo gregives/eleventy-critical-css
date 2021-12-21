@@ -1,3 +1,11 @@
+main {
+  height: 150vh;
+}
+
 h1 {
   color: red;
+}
+
+footer {
+  color: blue;
 }
