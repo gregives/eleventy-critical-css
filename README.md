@@ -62,6 +62,26 @@ The default options passed to Critical are:
 
 Where `content` and `outputPath` are the arguments passed to [Eleventy transforms](https://www.11ty.dev/docs/config/#transforms) and `outputDir` is the output directory specified in your [Eleventy configuration](https://www.11ty.dev/docs/config/#output-directory).
 
+### Maximum Concurrency
+
+Node.js will print a warning if more than 10 listeners are added for a particular event. This is a useful default that helps finding memory leaks.
+
+So that you don't see warnings when using eleventy-critical-css, the plugin respects the maximum number of listeners. You can use `process.setMaxListeners()` to increase the concurrency of eleventy-critical-css above the default, but be aware that it may be harder to detect memory leaks in your application as a result.
+
+```js
+const criticalCss = require("eleventy-critical-css");
+
+// Increase concurrency to 100
+process.setMaxListeners(100);
+
+// Unlimited concurrency
+process.setMaxListeners(0);
+
+module.exports = function (eleventyConfig) {
+  eleventyConfig.addPlugin(criticalCss);
+};
+```
+
 <!-- Badges -->
 
 [npm-version-src]: https://img.shields.io/npm/v/eleventy-critical-css/latest.svg
