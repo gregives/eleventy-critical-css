@@ -6,7 +6,7 @@
     "index.js"
   ],
   "scripts": {
-    "release": "np --no-cleanup",
+    "release": "np",
     "pretest": "eleventy",
     "test": "jest"
   },

@@ -11,7 +11,7 @@ module.exports = function (config, options) {
     if (outputPath && outputPath.endsWith(".html")) {
       const { html } = await critical.generate({
         assetPaths: [path.dirname(outputPath)],
-        base: config.dir.output,
+        base: config.dir.output ?? "_site",
         html: content,
         inline: true,
         rebase: ({ originalUrl }) => originalUrl,
