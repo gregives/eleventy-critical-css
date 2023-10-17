@@ -6,6 +6,6 @@
     "prettier/prettier": "error"
   },
   "parserOptions": {
-    "ecmaVersion": 2019
+    "ecmaVersion": "latest"
   }
 }
