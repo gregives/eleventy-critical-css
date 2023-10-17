@@ -10,6 +10,9 @@
     "pretest": "eleventy",
     "test": "jest"
   },
+  "engines": {
+    "node": ">=16.10"
+  },
   "repository": "gregives/eleventy-critical-css",
   "author": "Greg Ives",
   "keywords": [
